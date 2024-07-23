@@ -462,10 +462,17 @@ background-image: url(../img/konec-m.jpg);
   background-color: #fff;
   width: 100px;
   height: 100%;
-  padding: 5px;
+  padding: 5px 8px;
   border-radius: 3px;
-  text-align: center;
-  background: url(../img/arrow.png) no-repeat 80px / 15px;
+  background-color: #fff;
+  margin-right: 8px;
+  border: 1px solid #161616;
+}
+
+.statue .right li span{
+  display: block;
+  background: url(../img/arrow.png) no-repeat 70px / 10px;
+  text-align: left;
 }
 
 
