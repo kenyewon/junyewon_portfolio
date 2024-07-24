@@ -456,7 +456,6 @@ background-image: url(../img/konec-m.jpg);
 .statue .right{
   display: flex;
   text-align: left;
-  cursor: pointer;
 }
 .statue .right li{
   background-color: #fff;
@@ -483,6 +482,9 @@ background-image: url(../img/konec-m.jpg);
 .code_inner{
   padding: 15px;
 }
+.code_no li{
+  margin-bottom: 4px;
+}
 
 .code_txt span{
   color: #3546EA;
@@ -493,8 +495,14 @@ background-image: url(../img/konec-m.jpg);
   color: transparent;
   display: block;
 }
-
-
+.code_txt li span a{
+  color: #3546EA;
+  transition: all 0.3s; 
+}
+.code_txt li span a:hover{
+  font-size: 18px;
+  transition: all 0.3s;
+}
 
 /* 테블릿 (해상도 768px ~ 1199px)*/ 
 @media all and (min-width:768px) and (max-width:1199px) {
