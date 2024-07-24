@@ -416,6 +416,7 @@ background-image: url(../img/konec-m.jpg);
 
 .code_flex{
   display: flex;
+  align-items: center;
 }
 
 .code_box{
@@ -482,24 +483,25 @@ background-image: url(../img/konec-m.jpg);
 .code_inner{
   padding: 15px;
 }
+
 .code_no li{
   margin-bottom: 4px;
 }
 
-.code_txt span{
+.code_no span{
   color: #3546EA;
 }
 
-.code_txt li p{
+.code_no li p{
   font-size: 0;
   color: transparent;
   display: block;
 }
-.code_txt li span a{
+.code_no li span a{
   color: #3546EA;
   transition: all 0.3s; 
 }
-.code_txt li span a:hover{
+.code_no li span a:hover{
   font-size: 18px;
   transition: all 0.3s;
 }
