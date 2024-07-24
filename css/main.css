@@ -476,7 +476,6 @@ background-image: url(../img/konec-m.jpg);
 }
 
 
-
 .statue .right li img{
   width: 15px;
 }
@@ -489,7 +488,11 @@ background-image: url(../img/konec-m.jpg);
   color: #3546EA;
 }
 
-
+.code_txt li p{
+  font-size: 0;
+  color: transparent;
+  display: block;
+}
 
 
 
