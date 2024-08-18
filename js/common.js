@@ -29,11 +29,11 @@ $(document).ready(function(){
   $(window).bind('wheel', function(event){
     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
         // scroll up
-        $("header").removeClass("on");
+        $("header, m-gnb").removeClass("on");
     }
     else {
         // scroll down
-        $("header").addClass("on");
+        $("header, m-gnb").addClass("on");
     }
 
     var location = $(window).scrollTop();
@@ -171,5 +171,11 @@ $(document).ready(function(){
         scale *= 1.25
         cursorChild.style.setProperty('--cursor-scale', scale)
       }
+
+      //모바일 gnb
+      $(".m-gnb ul").hide();
+      $("button").click(function(){
+        $(".m-gnb ul").stop().slideToggle();
+      });
 
 });
