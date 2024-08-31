@@ -174,7 +174,7 @@ $(document).ready(function(){
 
       //모바일 gnb
       $(".m-gnb ul").hide();
-      $("button").click(function(){
+      $(".ham").click(function(){
         $(".m-gnb ul").stop().slideToggle();
       });
 
