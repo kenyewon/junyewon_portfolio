@@ -595,18 +595,71 @@ background-image: url(../img/konec-m.jpg);
     margin: 0 10px;
 
   }
-  .m-gnb .ham{
-    width: 20px;
-    height: 20px;
-    text-align: right;
-    background-color: #0366A8;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
 
+  /* 햄버거 버튼  스타일*/
+.menu-trigger {
+  margin: 10px 25px;
+}
 
+.menu-trigger:hover span:nth-of-type(1) {
+  background-color: #fff;
+}
 
+.menu-trigger:hover span:nth-of-type(2) {
+  background-color: #fff;
+}
+
+.menu-trigger:hover span:nth-of-type(3) {
+  background-color: #fff;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 11px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/* 햄버거 버튼 이벤트 */
+.menu-trigger.active-1 span:nth-of-type(1) {
+  -webkit-transform: translateY (10px) rotate (-45deg);
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.menu-trigger.active-1 span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active-1 span:nth-of-type(3) {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+}
   
 
   .text-wrap{
@@ -643,5 +696,23 @@ background-image: url(../img/konec-m.jpg);
     margin-top: 20px;
   }
 
+  #about .inner{
+    padding: 50px;
+  }
 
+  #about .pr1 .pr-txt p{
+    font-size: 14px;
+  }
+
+  #about .pr1 p{
+    font-size: 14px;
+  }
+
+  #about .flex-box{
+    display: block;
+  }
+
+  #about .tools-wrap{
+    width: 390px;
+  }
 }

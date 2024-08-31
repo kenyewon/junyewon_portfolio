@@ -174,8 +174,19 @@ $(document).ready(function(){
 
       //모바일 gnb
       $(".m-gnb ul").hide();
-      $(".ham").click(function(){
+      $(".menu-trigger").click(function(){
         $(".m-gnb ul").stop().slideToggle();
       });
+
+      var burger = $('.menu-trigger');
+
+      burger.each(function(index){
+        var $this = $(this);
+        
+        $this.on('click', function(e){
+          e.preventDefault();
+          $(this).toggleClass('active-' + (index+1));
+        })
+});
 
 });
